@@ -1,40 +1,132 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сложно сосредоточиться</title>
+    <link rel="stylesheet" href="./styles/base/UIKit.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
   </head>
   <body class="page">
     <header class="header decorated-zone">
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
+            <button class="header__theme-menu-button header__theme-menu-button_type_light">
               День
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
+            <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>
               Авто
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
+            <button class="header__theme-menu-button header__theme-menu-button_type_dark">
               Неон
             </button>
           </li>
         </ul>
       </nav>
+      <h1 class="header__title">no focus</h1>
+      <h3 class="h3 header__subtitle">Что делать, когда не можешь делать ничего</br>
+        Или почему нам так сложно сконцентрироваться, особенно когда очень надо</h3>
     </header>
+    <main class="main">
+      <section class="why">
+        <h2 class="block__title why__title">Почему сосредоточиться так сложно</h2>
+        <ul class="card-list why__card-list">
+          <li class="card-item why__card-item">
+            <card-template>
+              <span slot="card-header">Многозадачность</span>
+              <span slot="card-description">Особенно сложно сосредоточиться, когда задач много и все они — важные.
+                Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)?
+                А дело в том, что её просто не существует. Исследователи <a href="https://dana.org/article/multicosts-of-multitasking/">выяснили</a>, что мозгу тяжело концентрироваться
+                даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач,
+                организм паникует и выделяет кортизол и адреналин — «гормоны стресса».
+                Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.</span>
+            </card-template>
+          </li>
+          <li class="card-item why__card-item">
+            <card-template>
+              <span slot="card-header">Многозадачность</span>
+              <span slot="card-description"></span>
+            </card-template>
+          </li>
+        </ul>
+      </section>
+      <section class="what">
+        <h2 class="block__title what__title">Что снижает концентрацию внимания?</h2>
+        <ul class="card-list what__card-list">
+          <li class="card-item what__card-item">
+            <card-template>
+              <span slot="card-header">Многозадачность</span>
+              <span slot="card-description"></span>
+            </card-template>
+          </li>
+          <li class="card-item what__card-item">
+            <card-template>
+              <span slot="card-header">Многозадачность</span>
+              <span slot="card-description"></span>
+            </card-template>
+          </li>
+          <li class="card-item what__card-item">
+            <card-template>
+              <span slot="card-header">Многозадачность</span>
+              <span slot="card-description"></span>
+            </card-template>
+          </li>
+        </ul>
+      </section>
+      <section class="how">
+        <h2 class="block__title how__title">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
+        <ul class="card-list how__card-list">
+          <li class="card-item how__card-item">
+            <h3 class="card__header card__header-fat">5 простых (на самом деле не очень) советов</h3>
+          </li>
+          <li class="card-item how__card-item">
+            <card-template>
+              <span slot="card-header-thin">Многозадачность</span>
+              <span slot="card-description"></span>
+            </card-template>
+          </li>
+          <li class="card-item how__card-item">
+            <card-template>
+              <span slot="card-header-thin">Многозадачность</span>
+              <span slot="card-description"></span>
+            </card-template>
+          </li>
+          <li class="card-item how__card-item">
+            <card-template>
+              <span slot="card-header-thin">Многозадачность</span>
+              <span slot="card-description"></span>
+            </card-template>
+          </li>
+          <li class="card-item how__card-item">
+            <card-template>
+              <span slot="card-header-thin">Многозадачность</span>
+              <span slot="card-description"></span>
+            </card-template>
+          </li>
+          <li class="card-item how__card-item">
+            <card-template>
+              <span slot="card-header-thin">Многозадачность</span>
+              <span slot="card-description"></span>
+            </card-template>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      
+    </footer>
+    <template id="cardtemplate">
+      <h3 class="card__header card__header-fat"><slot name="card-header"></slot></h3>
+      <h4 class="card__header card__header-thin"><slot name="card-header-thin"></slot></h4>
+      <p class="card__description"><slot name="card-description"></slot></p>
+    </template>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/templates-script.js"></script>
   </body>
 </html>
