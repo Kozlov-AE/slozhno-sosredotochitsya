@@ -1,0 +1,9 @@
+.header__theme-menu-button {
+    border: none;
+    background: none;
+    color: var(--font-color);
+}
+
+.header__theme-menu-button_active {
+    outline: var(--font-color) 1px solid;
+}
