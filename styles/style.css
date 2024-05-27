@@ -1,5 +1,164 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+    max-width: 1024px;
+    margin: 0 auto;
+    font-family: IBM Plex mono, sans-serif;
+    font-size: 18px;
+    background-color: var(--page-background-color);
+}
+
+.section:not(last) {
+    margin-bottom: 60px;
+}
+
+.header {
+    min-height: 768px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    background-image: var(--header-background-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header__theme-menu {
+    margin-top:20px;
+    align-self: start;
+}
+
+.header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: var(--main-heading-font-size);
+    justify-self: start;
+    color: var(--heading-font-color);
+    text-shadow: var(--heading-shadow-color) 4px 4px;
+}
+
+.header__subtitle {
+    max-width: 491px;
+    justify-self: end;
+    align-self: start;
+    font-size: 18px;
+    background-color: var(--accent-color);
+    margin-right: 20px;
+    margin-top: 5%;
+}
+
+.main {
+    padding: 0 20px;
+}
+
+.why {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    align-items: start;
+}
+
+.what {
+    display: flex;
+    flex-direction: column;
+}
+
+.what__title {
+    max-inline-size: 32%;
+}
+
+.what__card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.how {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto max-content;
+    grid-template-areas: 
+            "header subheader"
+            "header cards";
+    grid-gap: 10px;
+}
+
+.how__title {
+    grid-area: header;
+}
+
+.gallery__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.8254fr 1fr 1.7976fr;
+    gap: 20px;
+    grid-template-areas: 
+        "ar1 ar1 ar2"
+        "ar4 ar5 ar2"
+        "ar4 ar3 ar3";
+}
+
+.gallery__img {
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
+}
+
+.gallery__img--1{
+    grid-area: ar1;
+    width: 100%;
+}
+
+.gallery__img--2{
+    grid-area: ar2;
+    height: fit-content;
+}
+
+.gallery__img--3{
+    grid-area: ar3;
+}
+
+.gallery__img--4{
+    grid-area: ar5;
+}
+
+.gallery__img--5{
+    grid-area: ar4;
+}
+
+.block__title {
+    font-weight: 700;
+    font-size: 18px;
+    text-wrap: wrap;
+    margin-bottom: 20px;
+    line-height: 1.35em;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card__header {
+    font-size: 18px;
+    background-color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.card__header-fat {
+    font-weight: 700;
+}
+
+.card__header-thin {
+    font-weight: normal;
+}
+
+.card__description {
+    line-height: 1.3em;
 }

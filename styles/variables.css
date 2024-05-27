@@ -4,7 +4,11 @@
 */
 :root {
     --page-background-color: #FFF1F7;
+    --header-background-image: url("../images/cover-image-light.png");
     --font-color: #353430;
-    
-
+    --button-hover-border: rgba(53, 52, 48, 0.4);
+    --accent-color: #FF8DCB;
+    --heading-font-color: #FFC2E6;
+    --heading-shadow-color: #FF0070;
+    --main-heading-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }

@@ -5,36 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сложно сосредоточиться</title>
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/base/UIKit.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
   </head>
   <body class="page">
-    <header class="header decorated-zone">
+    <header class="header decorated-zone section">
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button class="header__theme-menu-button header__theme-menu-button_type_light">
-              День
+              день
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>
-              Авто
+              авто
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button class="header__theme-menu-button header__theme-menu-button_type_dark">
-              Неон
+              неон
             </button>
           </li>
         </ul>
       </nav>
       <h1 class="header__title">no focus</h1>
       <h3 class="h3 header__subtitle">Что делать, когда не можешь делать ничего</br>
-        Или почему нам так сложно сконцентрироваться, особенно когда очень надо</h3>
+      Или почему нам так сложно сконцентрироваться, особенно когда очень надо</h3>
     </header>
     <main class="main">
-      <section class="why">
+      <section class="why section">
         <h2 class="block__title why__title">Почему сосредоточиться так сложно</h2>
         <ul class="card-list why__card-list">
           <li class="card-item why__card-item">
@@ -43,7 +46,7 @@
               <p class="card__description">
                 Особенно сложно сосредоточиться, когда задач много и все они — важные.
                 Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)?
-                А дело в том, что её просто не существует. Исследователи <a href="https://dana.org/article/multicosts-of-multitasking/">выяснили</a>, что мозгу тяжело концентрироваться
+                А дело в том, что её просто не существует. Исследователи <a class="link" href="https://dana.org/article/multicosts-of-multitasking/">выяснили</a>, что мозгу тяжело концентрироваться
                 даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач,
                 организм паникует и выделяет кортизол и адреналин — «гормоны стресса».
                 Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.
@@ -58,11 +61,11 @@
           </li>
         </ul>
       </section>
-      <section class="what">
+      <section class="what section">
         <h2 class="block__title what__title">Что снижает концентрацию внимания?</h2>
         <ul class="card-list what__card-list">
           <li>
-            <article class ="card">
+            <article class ="card what__card">
               <h3 class="h3 card__header card__header-fat">Многозадачность</h3>
               <p class="card__description">
                 Как концентрация может снижаться из-за… концентрации? Любая стрессовая ситуация (и резко меняющийся мир в целом) заставляет наш мозг постоянно «сканировать» окружающую среду на предмет опасности. Например, читать новости вместо работы. Но быть собранными всё время — невозможно. Концентрация — мышца, и она может не выдержать, если не давать ей отдохнуть.
@@ -70,7 +73,7 @@
             </article>
           </li>
           <li>
-            <article class ="card">
+            <article class ="card what__card">
               <h3 class="h3 card__header card__header-fat">Еда</h3>
               <p class="card__description">
                 «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно доставляют в мозг энергию и помогают ему лучше работать. Но уходит эта энергия также быстро, как и приходит. А мы в результате попадаем на «углеводные качели»: как только действие «быстрых углеводов» заканчивается, мы чувствуем усталость и сонливость. И хотим ещё больше быстрых углеводов.
@@ -78,7 +81,7 @@
             </article>
           </li>
           <li>
-            <article class ="card">
+            <article class ="card what__card">
               <h3 class="h3 card__header card__header-fat">Гаджеты</h3>
               <p class="card__description">
                 Да-да, это та самая ситуация, когда на экране ноутбука — код, в наушниках — подкаст, а на компьютере фоном — ещё и видео с забавными утятами. В результате мозг пытается переключиться с одной задачи на другую — и просто не может. А чтобы вернуться к состоянию полной концентрации, человеку в среднем нужно 20 минут. Вот и получается, что чем больше времени мы проводим в гаджетах, тем больше времени затем нужно, чтобы вернуться к работе.
@@ -87,7 +90,7 @@
           </li>
         </ul>
       </section>
-      <section class="how">
+      <section class="how section">
         <h2 class="block__title how__title">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
         <h3 class="card__header card__header-fat">5 простых (на самом деле не очень) советов</h3>
         <ul class="card-list how__card-list">
@@ -111,7 +114,7 @@
             <article class ="card">
               <h4 class="h4 card__header card__header-thin">Прогуляйтесь</h4>
               <p class="card__description">
-                Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <a href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328">показал</a>, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.
+                Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <a class="link" href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328">показал</a>, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.
               </p>
             </article>
           </li>
@@ -133,14 +136,34 @@
           </li>
         </ul>
       </section>
-      <section class="galery">
-        <h3 class="h3">А можно в картинках?</h3>
-        <div class="galery__content">
-          <img src="images/sunset.png" class="galery__img" alt="Горы и птицы улетающие закат над этими горами" >
-          <img src="images/ice-cream.png" class="galery__img" alt="Существа, напоминающие котиков. Выполняют роль шариков мороженного в чашке с нарисованой милой мордочкой. Они сидят под зонтиком, а на заднем фоне печенье-трубочки" >
-          <img src="images/tape.png" class="galery__img" alt="Стилизованная аудиокасета, окруженная атрибутами операционной системы windows начала 2000х годов" >
-          <img src="images/books.png" class="galery__img" alt="Стопка разноцветных книг. На вершине стопки чашка чая с надписью 'Read more'" >
-          <img src="images/street.png" class="galery__img" alt="Улица китая, перекресток дорог, вид с пешеходного перехода на стену позади которой деревья, скорее всего какойто сквер" >
+      <section class="gallery section">
+        <h3 class="card__header card__header-fat">А можно в картинках?</h3>
+        
+        <div class="gallery__content">
+          <img src="images/sunset.png"
+               class="gallery__img gallery__img--1"
+               alt="Горы и птицы улетающие закат над этими горами"
+               loading="lazy">
+          <img src="images/ice-cream.png"
+               class="gallery__img gallery__img--2"
+               alt="Существа, напоминающие котиков. Выполняют роль шариков мороженного
+                в чашке с нарисованой милой мордочкой. Они сидят под зонтиком, 
+                а на заднем фоне печенье-трубочки"
+               loading="lazy">
+          <img src="images/tape.png"
+               class="gallery__img gallery__img--3"
+               alt="Стилизованная аудиокасета, окруженная атрибутами операционной системы 
+               windows начала 2000х годов"
+               loading="lazy">
+          <img src="images/books.png"
+               class="gallery__img gallery__img--4"
+               alt="Стопка разноцветных книг. На вершине стопки чашка чая с надписью 'Read more'"
+               loading="lazy">
+          <img src="images/street.png"
+               class="gallery__img gallery__img--5"
+               alt="Улица китая, перекресток дорог, вид с пешеходного перехода на стену позади которой деревья, 
+               скорее всего какойто сквер"
+               loading="lazy">
         </div>
       </section>
     </main>
