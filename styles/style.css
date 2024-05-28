@@ -83,7 +83,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto max-content;
-    grid-template-areas: 
+    grid-template-areas:
             "header subheader"
             "header cards";
     grid-gap: 10px;
@@ -96,33 +96,32 @@
 .gallery__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.8254fr 1fr 1.7976fr;
-    gap: 20px;
-    grid-template-areas: 
+    grid-template-rows: auto auto auto;
+    gap: 1.95%;
+    grid-template-areas:
         "ar1 ar1 ar2"
         "ar4 ar5 ar2"
         "ar4 ar3 ar3";
+    margin-top: 20px;
 }
 
 .gallery__img {
-    height: 100%;
+    inline-size: 100%;
+    block-size: 100%;
     object-fit: cover;
     overflow: hidden;
-    display: block;
 }
 
 .gallery__img--1{
     grid-area: ar1;
-    width: 100%;
 }
 
 .gallery__img--2{
     grid-area: ar2;
-    height: fit-content;
 }
 
 .gallery__img--3{
-    grid-area: ar3;
+    grid-area: ar4;
 }
 
 .gallery__img--4{
@@ -130,7 +129,7 @@
 }
 
 .gallery__img--5{
-    grid-area: ar4;
+    grid-area: ar3;
 }
 
 .block__title {
