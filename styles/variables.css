@@ -10,5 +10,6 @@
     --accent-color: #FF8DCB;
     --heading-font-color: #FFC2E6;
     --heading-shadow-color: #FF0070;
+    --decorated-element-color: #353430;
     --main-heading-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }

@@ -23,6 +23,32 @@
     background-size: cover;
 }
 
+.decorated-zone {
+    position: relative;
+}
+
+.decorated-zone::after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-top: 1px solid var(--decorated-element-color);
+    border-right: 1px solid var(--decorated-element-color);
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+}
+
+.decorated-zone::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-bottom: 1px solid var(--decorated-element-color);
+    border-left: 1px solid var(--decorated-element-color);
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+}
+
 .header__theme-menu {
     margin-top:20px;
     align-self: start;
@@ -128,6 +154,10 @@
 
 .gallery__img--5{
     grid-area: bottom;
+}
+
+.footer {
+    box-sizing: content-box;
 }
 
 .footer__title {
