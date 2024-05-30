@@ -1,0 +1,39 @@
+@media (max-width:768px) {
+    .header {
+        min-height: 1024px;
+    }
+
+    .header__theme-menu {
+        inset: 0;
+        margin-inline-end: 20px;
+        margin-block-end: 54px;
+        align-self: end;
+        justify-self: end;
+    }
+
+    .header__theme-menu-list {
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .header__subtitle {
+        max-inline-size: 364px;
+    }
+    
+    .why {
+        grid-gap: 20px;
+    }
+
+    .what__card-list {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .how {
+        grid-gap: 10px 20px;
+    }
+    
+    .footer__title {
+        padding: 3.65em 0;
+    }
+}
