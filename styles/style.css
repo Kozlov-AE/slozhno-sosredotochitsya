@@ -8,8 +8,8 @@
     background-color: var(--page-background-color);
 }
 
-.section:not(last) {
-    margin-bottom: 60px;
+.section:not(:last-child) {
+    margin-block-end: 60px;
 }
 
 .header {
@@ -21,6 +21,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-block-end: 60px;;
 }
 
 .decorated-zone {
@@ -70,7 +71,7 @@
 }
 
 .header__subtitle {
-    max-width: 491px;
+    max-inline-size: 491px;
     justify-self: end;
     align-self: start;
     font-size: 18px;
@@ -173,11 +174,11 @@
     font-weight: 700;
     font-size: 18px;
     text-wrap: wrap;
-    margin-bottom: 20px;
+    margin-block-end: 20px;
     line-height: 1.35em;
 }
 
-.card {
+.card:not(:last-child) {
     margin-bottom: 20px;
 }
 

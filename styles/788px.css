@@ -4,7 +4,6 @@
     }
 
     .header__theme-menu {
-        inset: 0;
         margin-inline-end: 20px;
         margin-block-end: 54px;
         align-self: end;
@@ -15,7 +14,7 @@
         flex-direction: column;
         gap: 13px;
     }
-
+    
     .header__subtitle {
         max-inline-size: 364px;
     }
