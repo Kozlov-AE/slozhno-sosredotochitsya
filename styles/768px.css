@@ -1,4 +1,8 @@
 @media (max-width:768px) {
+    .section:last-child {
+        margin-block-end: 60px;
+    }
+    
     .header {
         min-height: 1024px;
     }
@@ -17,6 +21,7 @@
     
     .header__subtitle {
         max-inline-size: 364px;
+        margin-block-start: 5.5%;
     }
     
     .why {
@@ -33,6 +38,6 @@
     }
     
     .footer__title {
-        padding: 3.65em 0;
+        padding-block: 3.623em;
     }
 }

@@ -42,16 +42,19 @@
     .header__subtitle {
         width: 100%;
         margin-right: 0;
-        margin-top: -30px;
-        align-self: center;
+        margin-top: 11.5%;
     }
 
     .main {
         padding: 0;
     }
 
-    .section:not(:last-child) {
+    .section {
         margin-block-end: 50px;
+    }
+    
+    .section:last-child {
+       margin-block-end: 40px; 
     }
 
     .why {
@@ -74,5 +77,15 @@
     
     .how__subtitle {
         margin-block-end: 20px;
+    }
+    
+    .gallery__content {
+        display: flex;
+        flex-direction: column; 
+        gap: 10px;
+    }
+    
+    .footer__title {
+        padding-block: 2.1em;
     }
 }
