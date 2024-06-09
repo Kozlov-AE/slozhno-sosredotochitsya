@@ -6,6 +6,7 @@
     font-family: IBM Plex mono, sans-serif;
     font-size: 18px;
     background-color: var(--page-background-color);
+    background-attachment: fixed;
 }
 
 .section {
@@ -56,7 +57,7 @@
 }
 
 .header__theme-menu {
-    margin-top:20px;
+    margin-top: 20px;
     align-self: start;
 }
 
@@ -152,23 +153,23 @@
     overflow: hidden;
 }
 
-.gallery__img--1{
+.gallery__img--1 {
     grid-area: top;
 }
 
-.gallery__img--2{
+.gallery__img--2 {
     grid-area: right;
 }
 
-.gallery__img--3{
+.gallery__img--3 {
     grid-area: left;
 }
 
-.gallery__img--4{
+.gallery__img--4 {
     grid-area: center;
 }
 
-.gallery__img--5{
+.gallery__img--5 {
     grid-area: bottom;
 }
 
