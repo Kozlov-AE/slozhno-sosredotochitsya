@@ -60,6 +60,14 @@
     align-self: start;
 }
 
+.header__theme-menu::before {
+    content: none;
+}
+
+.header__theme-menu::after {
+    content: none;
+}
+
 .header__theme-menu-list {
     display: flex;
     flex-direction: row;
@@ -183,6 +191,7 @@
     text-wrap: wrap;
     margin-block-end: 20px;
     line-height: 1.35em;
+    color: var(--block-heading-color);
 }
 
 .card-item:not(:last-child) {

@@ -1,12 +1,22 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+    --page-background-color: #FFF1F7;
+    --header-background-image: url("../images/cover-image-light.png");
+    --font-color: #353430;
+    --block-heading-color: #353430;
+    --button-hover-border: rgba(53, 52, 48, 0.4);
+    --accent-color: #FF8DCB;
+    --heading-font-color: #FFC2E6;
+    --heading-shadow-color: #FF0070;
+    --decorated-element-color: #353430;
+    --main-heading-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --mobile-heading-font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --rec-color: transparent; 
+}
+
+.header__theme-menu::before {
+    content: none;
+}
+
+.header__theme-menu::after {
+    content: none;
 }
