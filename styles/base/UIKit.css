@@ -15,6 +15,7 @@
 
 .header__theme-menu-button:hover {
     outline: var(--button-hover-border) 1px solid;
+    cursor: pointer;
 }
 
 .header__theme-menu-button:focus {
@@ -33,7 +34,8 @@
 }
 
 .link:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px solid var(--font-color);
 }
 
 .link:focus {
