@@ -12,7 +12,6 @@
     }
 
     .header {
-        min-height: 668px;
         padding: 0;
         margin-block-end: 40px;
     }
@@ -52,9 +51,9 @@
     .section {
         margin-block-end: 50px;
     }
-    
+
     .section:last-child {
-       margin-block-end: 40px; 
+        margin-block-end: 40px;
     }
 
     .why {
@@ -74,18 +73,14 @@
         flex-direction: column;
         grid-gap: 0;
     }
-    
+
     .how__subtitle {
         margin-block-end: 20px;
     }
-    
+
     .gallery__content {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         gap: 10px;
-    }
-    
-    .footer__title {
-        padding-block: 2.1em;
     }
 }

@@ -3,9 +3,13 @@
 .page {
     max-width: 1024px;
     margin: 0 auto;
-    font-family: IBM Plex mono, sans-serif;
+    font-family: IBM Plex mono, monospace;
     font-size: 18px;
     background-color: var(--page-background-color);
+    background-image: var(--header-background-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -19,15 +23,12 @@
 }
 
 .header {
-    min-height: 768px;
+    min-height: 668px;
+    height: 100vh;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     place-items: center;
-    background-image: var(--header-background-image);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-block-end: 60px;;
+    margin-block-end: 60px;
 }
 
 .decorated-zone {
@@ -62,11 +63,26 @@
 }
 
 .header__theme-menu::before {
-    content: none;
+    content: "rec";
+    text-transform: uppercase;
+    color: var(--rec-color);
+    position: absolute;
+    inset-inline-end: 48px;
+    inset-block-start: 22px;
 }
 
 .header__theme-menu::after {
-    content: none;
+    content: "";
+    position: absolute;
+    inset-inline-end: 29px;
+    inset-block-start: 29px;
+    width: 9px;
+    height: 9px;
+    background: var(--rec-color);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 2px var(--rec-color);
 }
 
 .header__theme-menu-list {
@@ -85,6 +101,7 @@
 }
 
 .header__subtitle {
+    font-weight: bold;
     max-inline-size: 491px;
     justify-self: end;
     align-self: start;
@@ -174,7 +191,11 @@
 }
 
 .footer {
-    box-sizing: content-box;
+    min-height: 668px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer__title {
@@ -182,8 +203,6 @@
     font-size: var(--main-heading-font-size);
     color: var(--heading-font-color);
     text-shadow: var(--heading-shadow-color) 2px 2px;
-    padding: 1.81em 0;
-    text-align: center;
 }
 
 .block__title {

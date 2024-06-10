@@ -2,10 +2,6 @@
     .section:last-child {
         margin-block-end: 60px;
     }
-    
-    .header {
-        min-height: 1024px;
-    }
 
     .header__theme-menu {
         margin-inline-end: 20px;
@@ -18,12 +14,12 @@
         flex-direction: column;
         gap: 13px;
     }
-    
+
     .header__subtitle {
         max-inline-size: 364px;
         margin-block-start: 5.5%;
     }
-    
+
     .why {
         grid-gap: 20px;
     }
@@ -35,9 +31,5 @@
 
     .how {
         grid-gap: 10px 20px;
-    }
-    
-    .footer__title {
-        padding-block: 3.623em;
     }
 }
