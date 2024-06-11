@@ -1,8 +1,4 @@
 @media (max-width:768px) {
-    .section:last-child {
-        margin-block-end: 60px;
-    }
-
     .header__theme-menu {
         margin-inline-end: 20px;
         margin-block-end: 54px;
