@@ -62,7 +62,7 @@
     align-self: start;
 }
 
-.header__theme-menu::before {
+ .header__theme-menu::before {
     content: "rec";
     text-transform: uppercase;
     color: var(--rec-color);
