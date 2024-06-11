@@ -83,4 +83,8 @@
         flex-direction: column;
         gap: 10px;
     }
+    
+    .footer__title {
+        font-size: var(--mobile-heading-font-size);
+    }
 }
