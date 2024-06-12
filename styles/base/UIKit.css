@@ -23,7 +23,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-    border-bottom: var(--font-color) 1px solid;
+    border-bottom: var(--button-text-color) 1px solid;
 }
 
 .link {

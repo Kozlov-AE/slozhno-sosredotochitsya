@@ -32,24 +32,16 @@
         align-self: center;
     }
 
-.header__theme-menu::before {
-    content: "rec";
-    text-transform: uppercase;
-    color: var(--rec-color);
-    position: absolute;
-    inset-inline-end: 48px;
-    inset-block-start: 22px;
-}
+    .header__theme-menu::before {
+        inset-inline-end: 29px;
+        inset-block-start: 11px;
+    }
 
     .header__theme-menu::after {
         inset-inline-end: 9px;
         inset-block-start: 18px;
     }
 
-    .header__theme-menu::before {
-        inset-inline-end: 29px;
-        inset-block-start: 11px;
-    }
 
     .header__title {
         font-size: var(--mobile-heading-font-size);
@@ -78,7 +70,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto min-content;
         grid-gap: 0;
-        align-items: start;
     }
 
     .what__title {
